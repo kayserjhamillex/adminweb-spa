@@ -1,0 +1,49 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h2 class="text-center">
+              Tours
+            </h2>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3 cuadrillos" *ngFor="let obj of catalogo">
+            <div>
+              <button type="submit" class="btn btn-outline-success btn-lg btn-block btn-pill" (click)="serviceselected(obj.id)">
+                {{obj.Name}}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div>
+            <h4 class="text-center">
+              Lista de Clientes del Servicio Elejido
+            </h4>
+          </div>
+          <div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>Masajista</th>
+                  <th>Entrada</th>
+                  <th>Salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let obj of reservasfiltradas">
+                  <td>{{obj.cliente.Fullname}}</td>
+                  <td>{{obj.horario.masajista.Fullname}}</td>
+                  <td>{{obj.horario.hora.Horainicio}}</td>
+                  <td>{{obj.horario.hora.Horafin}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

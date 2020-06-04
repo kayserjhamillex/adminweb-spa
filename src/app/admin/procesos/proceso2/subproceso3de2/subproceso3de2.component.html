@@ -1,0 +1,39 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            Horario de: {{masajista.Fullname}}
+          </h3>
+        </div>
+        <div class="card-body">
+          <div class="col-12 p-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Desde</th>
+                  <th>Hasta</th>
+                  <th>  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let obj of horariofiltrado">
+                  <td>{{obj.hora.Horainicio}}</td>
+                  <td>{{obj.hora.Horafin}}</td>
+                  <td>
+                    <button (click)="elegir(obj.id)" type="button" class="btn btn-pill btn-block btn-info">
+                      Elejir
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

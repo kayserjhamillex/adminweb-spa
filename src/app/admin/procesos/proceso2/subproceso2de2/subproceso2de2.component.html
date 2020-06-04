@@ -1,0 +1,87 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">
+            Servicios
+          </h4>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let obj of servios">
+                <td>{{obj.Name}}</td>
+                <td>S/. {{obj.Monto}}.00</td>
+                <td>
+                  <button (click)="updateservicio(obj.id)" type="button" class="btn btn-outline-warning btn-lg btn-block btn-pill">
+                    Elejir
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">
+            Masajistas
+          </h4>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Genero</th>
+                <th>  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let obj of masajistas">
+                <td>{{obj.Fullname}}</td>
+                <td>{{obj.Genero}}</td>
+                <td>
+                  <button (click)="updatemasajista(obj.id)" type="button" class="btn btn-outline-warning btn-lg btn-block btn-pill">
+                    Elejir
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">
+            Elegir Horario
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="co-12 p-2" *ngIf="igual">
+            <button (click)="mismo()" type="button" class="btn btn-outline-success btn-lg btn-block btn-pill">
+              Seguir con el mismo Servicio y Masajistas
+            </button>
+          </div>
+          <div class="co-12 p-2" *ngIf="cambio">
+            <button (click)="cambios()" type="button" class="btn btn-outline-success btn-lg btn-block btn-pill">
+              Ver Horario de los nuevos cambios
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

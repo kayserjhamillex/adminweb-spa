@@ -1,0 +1,110 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <strong>
+            Editar
+          </strong>
+          <code>
+             Servicio
+          </code>
+        </div>
+        <div class="card-body">
+          <form id="formNewAdmin" class="was-validated" name="formNewAdmin">
+            <div class="form-group">
+              <label class="form-col-form-label" for="Name">
+                <strong>
+                  Nombre
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Name" name="Name" [(ngModel)]="servicio.Name" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Monto">
+                <strong>
+                  Monto
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Monto" name="Monto" [(ngModel)]="servicio.Monto" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Resumen">
+                <strong>
+                  Resumen
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Resumen" name="Resumen" [(ngModel)]="servicio.Resumen" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Descripcion">
+                <strong>
+                  Descripcion
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Descripcion" name="Descripcion" [(ngModel)]="servicio.Descripcion" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Iconoservicio">
+                <strong>
+                  Icono del servicio
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Iconoservicio" name="Iconoservicio" [(ngModel)]="servicio.Iconoservicio" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Imagenservicio">
+                <strong>
+                  Imagen del servicio
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Imagenservicio" name="Imagenservicio" [(ngModel)]="servicio.Imagenservicio" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-success btn-lg btn-block btn-pill" (click)="updateServicio()">
+                Actualizar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div>
+</div>
+

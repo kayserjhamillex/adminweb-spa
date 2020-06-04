@@ -1,0 +1,122 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">
+            Rango de Horas
+          </h4>
+        </div>
+        <div class="card-body">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Inicio</th>
+                <th>Fin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let obj of horas">
+                <td>{{obj.Horainicio}}</td>
+                <td>
+                  <button (click)="inicio(obj.id)" type="button" class="btn btn-pill btn-block btn-warning">
+                    <i class="fas fa-play"></i>
+                  </button>
+                </td>
+                <td>
+                  <button (click)="fin(obj.id)" type="button" class="btn btn-pill btn-block btn-warning">
+                    <i class="fas fa-stop"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="t  ext-center">
+            Elegir Masajista
+          </h4>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Apellidos y Nombres</th>
+                <th>  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let obj of masajista">
+                <td>{{obj.Fullname}}</td>
+                <td>
+                  <button (click)="elejir(obj.id)" type="button" class="btn btn-pill btn-block btn-success">
+                    Elejir
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">
+            Dia Elegido
+          </h4>
+        </div>
+        <div class="card-body">
+          <div class="col-12">
+            <div class="col-lg-6 wasa p-1" *ngFor="let obj of dias">
+              <button (click)="diaelegido(obj.name)" type="button" class="btn btn-pill btn-block btn-success">
+                {{obj.name}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-5">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="text-center">
+            Vista Previa
+          </h4>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Masajista</th>
+                <th>Hora</th>
+                <th>  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let obj of previo">
+                <td>{{obj.Dia}}</td>
+                <td>{{obj.MasajistaId}}</td>
+                <td>{{obj.HoraId}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="col-12 p-1">
+            <button (click)="limpiar()" type="button" class="btn btn-pill btn-block btn-success">
+              Limpiar
+            </button>
+          </div>
+          <div class="col-12 p-1">
+            <button (click)="finalizar()" type="button" class="btn btn-pill btn-block btn-success">
+              Finalizar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

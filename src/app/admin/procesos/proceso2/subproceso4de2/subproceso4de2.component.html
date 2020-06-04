@@ -1,0 +1,45 @@
+<div class="animated fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 shadow p-5 mb-2 bg-white rounded rounded-lg border border-light fondo">
+        <div class="col-12 contenido oscuro">
+          <div class="col-12">
+            <div class="col-12 col-lg-3 casillero">
+                Codigo: {{ticket.id}}
+            </div>
+            <div class="col-12 col-lg-9 casillero">
+              Servicio: {{ticket.servicio.Name}}
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="col-12">
+            <div class="col-12">
+              Cliente: {{ticket.cliente.Fullname}}
+            </div>
+          </div>
+          <br>
+          <div class="col-12">
+            <div class="col-12">
+              Fecha Reserva: {{ticket.FechaReserva}}
+            </div>
+            <br>
+            <div class="col-12">
+              Horario: {{ticket.horario.hora.Horainicio}} hasta {{ticket.horario.hora.Horafin}}
+            </div>
+          </div>
+          <br>
+          <div class="col-12">
+            <div class="col-12 col-lg-3 casillero">
+              Precio: S/. {{ticket.servicio.Monto}}.00
+            </div>
+            <div class="col-12 col-lg-9 casillero">
+              Masajista: {{ticket.horario.masajista.Fullname}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

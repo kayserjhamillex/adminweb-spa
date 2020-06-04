@@ -1,0 +1,112 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <strong>
+            Editar
+          </strong>
+          <code>
+             Blog
+          </code>
+        </div>
+        <div class="card-body">
+          <form id="formNewAdmin" class="was-validated" name="formNewAdmin">
+            <div class="form-group">
+              <label class="form-col-form-label" for="Titulo">
+                <strong>
+                  Titulo
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Titulo" name="Titulo" [(ngModel)]="blog.Titulo" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Subtitulo">
+                <strong>
+                  Subtitulo
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Subtitulo" name="Subtitulo" [(ngModel)]="blog.Subtitulo" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Resumen">
+                <strong>
+                  Resumen
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Resumen" name="Resumen" [(ngModel)]="blog.Resumen" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Descripcion">
+                <strong>
+                  Descripcion
+                </strong>
+              </label>
+              <textarea type="text" class="form-control" id="Descripcion" name="Descripcion" [(ngModel)]="blog.Descripcion" required>
+              </textarea>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Imagendelblog">
+                <strong>
+                  Imagen del blog
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Imagendelblog" name="Imagendelblog" [(ngModel)]="blog.Imagendelblog" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Videodelblog">
+                <strong>
+                  Video del blog
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Videodelblog" name="Videodelblog" [(ngModel)]="blog.Videodelblog" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-success btn-lg btn-block btn-pill" (click)="updateBlog()">
+                Actualizar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div>
+</div>
+
+

@@ -1,0 +1,153 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          <strong>
+            Editar
+          </strong>
+          <code>
+             Barbero
+          </code>
+        </div>
+        <div class="card-body">
+          <form id="formNewAdmin" class="was-validated" name="formNewAdmin">
+            <div class="form-group">
+              <label class="form-col-form-label" for="Fullname">
+                <strong>
+                  Apellidos y Nombres
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Fullname" name="Fullname" [(ngModel)]="barbero.Fullname" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Genero">
+                <strong>
+                  Genero
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Genero" name="Genero" [(ngModel)]="barbero.Genero" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Celular">
+                <strong>
+                  Celular
+                </strong>
+              </label>
+              <input type="text" class="form-control" id="Celular" name="Celular" [(ngModel)]="barbero.Celular" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Email">
+                <strong>
+                  Correo
+                </strong>
+              </label>
+              <input type="email" class="form-control" id="Email" name="Email" [(ngModel)]="barbero.Email" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Contrasena">
+                <strong>
+                  Password
+                </strong>
+              </label>
+              <input type="password" class="form-control" id="Contrasena" name="Contrasena" [(ngModel)]="barbero.Password" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="ImagenBarbero">
+                <strong>
+                  Imagen Barbero
+                </strong>
+              </label>
+              <input type="password" class="form-control" id="ImagenBarbero" name="ImagenBarbero" [(ngModel)]="barbero.ImagenBarbero" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Facebook">
+                <strong>
+                  Facebook
+                </strong>
+              </label>
+              <input type="password" class="form-control" id="Facebook" name="Facebook" [(ngModel)]="barbero.Facebook" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Instagram">
+                <strong>
+                  Instagram
+                </strong>
+              </label>
+              <input type="password" class="form-control" id="Instagram" name="Instagram" [(ngModel)]="barbero.Instagram" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-col-form-label" for="Twitter">
+                <strong>
+                  Twitter
+                </strong>
+              </label>
+              <input type="password" class="form-control" id="Twitter" name="Twitter" [(ngModel)]="barbero.Twitter" required>
+              <div class="valid-feedback">
+                Campo rellenado.
+              </div>
+              <div class="invalid-feedback">
+                Por favor rellene el campo.
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-success btn-lg btn-block btn-pill" (click)="updateBarbero()">
+                Actualizar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!--/.col-->
+  </div>
+</div>
+
+

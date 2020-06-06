@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { ServicioService } from 'src/app/services/servicio.service';
 import { Cliente } from 'src/app/models/cliente';
+import { Component, OnInit } from '@angular/core';
 import { ClienteService } from 'src/app/services/cliente.service';
+import { ServicioService } from 'src/app/services/servicio.service';
 
 @Component({
   selector: 'app-subproceso1de3',

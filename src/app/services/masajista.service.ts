@@ -31,4 +31,8 @@ export class MasajistaService {
   updateMasajista(id: string|number, updatedMasajista: Masajista): Observable<Masajista> {
     return this.http.put(`${this.apiUrl}/update/${id}`, updatedMasajista);
   }
+
+  getfiltermasajista(dia: string) {
+    return this.http.get(`${this.apiUrl}/filter/${dia}`);
+  }
 }

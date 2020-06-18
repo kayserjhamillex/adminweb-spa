@@ -15,8 +15,8 @@ export class UpdateServicioComponent implements OnInit {
     Name: '',
     Resumen: '',
     Descripcion: '',
-    Iconoservicio: '',
-    Imagenservicio: '',
+    IconoServicioS: '',
+    ImagenServicioS: '',
     Monto: ''
   };
   constructor(

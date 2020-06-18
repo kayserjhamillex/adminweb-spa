@@ -96,6 +96,35 @@ export const navItems: INavData[] = [
     ]
   },
   {
+    name: 'Testimonio',
+    url: '/admin/wasa',
+    icon: 'icon-pencil',
+    children: [
+      {
+        name: 'Lista Testimonios',
+        url: '/admin/testimonio/list',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'Crear Testimonios',
+        url: '/admin/testimonio/create',
+        icon: 'icon-puzzle'
+      },
+    ]
+  },
+  {
+    name: 'Comentarios',
+    url: '/admin/wasa',
+    icon: 'icon-pencil',
+    children: [
+      {
+        name: 'Lista de Blogs',
+        url: '/admin/comentarios/listblog',
+        icon: 'icon-puzzle'
+      }
+    ]
+  },
+  {
     name: 'Horario',
     url: '/admin/wasa',
     icon: 'icon-pencil',
@@ -112,23 +141,6 @@ export const navItems: INavData[] = [
       },
     ]
   },
-  // {
-  //   name: 'Barbero',
-  //   url: '/admin/wasa',
-  //   icon: 'icon-pencil',
-  //   children: [
-  //     {
-  //       name: 'Lista Barberos',
-  //       url: '/admin/barbero/list',
-  //       icon: 'icon-puzzle'
-  //     },
-  //     {
-  //       name: 'Crear Barbero',
-  //       url: '/admin/barbero/create',
-  //       icon: 'icon-puzzle'
-  //     },
-  //   ]
-  // },
   {
     divider: true
   },

@@ -16,8 +16,8 @@ export class UpdateBlogComponent implements OnInit {
     Subtitulo: '',
     Resumen: '',
     Descripcion: '',
-    Imagendelblog: '',
-    Videodelblog: ''
+    ImagendelBlogS: '',
+    VideodelBlogS: ''
   };
   constructor(
     private router: Router,

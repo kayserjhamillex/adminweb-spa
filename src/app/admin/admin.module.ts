@@ -74,6 +74,12 @@ import { ListMasajistaComponent } from './masajista/list-masajista/list-masajist
 import { CreateHorarioComponent } from './horario/create-horario/create-horario.component';
 import { ListHorarioComponent } from './horario/list-horario/list-horario.component';
 import { UpdateHorarioComponent } from './horario/update-horario/update-horario.component';
+import { CreateTestimonioComponent } from './testimonio/create-testimonio/create-testimonio.component';
+import { UpdateTestimonioComponent } from './testimonio/update-testimonio/update-testimonio.component';
+import { ListTestimonioComponent } from './testimonio/list-testimonio/list-testimonio.component';
+import { ListComentarioComponent } from './comentario/list-comentario/list-comentario.component';
+import { UpdateComentarioComponent } from './comentario/update-comentario/update-comentario.component';
+import { ListBlogscomentComponent } from './comentario/list-blogscoment/list-blogscoment.component';
 
 
 
@@ -118,7 +124,13 @@ import { UpdateHorarioComponent } from './horario/update-horario/update-horario.
     ListMasajistaComponent,
     CreateHorarioComponent,
     ListHorarioComponent,
-    UpdateHorarioComponent],
+    UpdateHorarioComponent,
+    CreateTestimonioComponent,
+    UpdateTestimonioComponent,
+    ListTestimonioComponent,
+    ListComentarioComponent,
+    UpdateComentarioComponent,
+    ListBlogscomentComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

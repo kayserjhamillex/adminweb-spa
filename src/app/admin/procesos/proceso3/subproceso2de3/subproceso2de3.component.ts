@@ -1,10 +1,10 @@
-import { ToastrService } from 'ngx-toastr';
 import { Component, OnInit } from '@angular/core';
-import { Reservita } from 'src/app/models/reservita';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { HorarioService } from 'src/app/services/horario.service';
 import { ReservaService } from 'src/app/services/reserva.service';
 import { MasajistaService } from 'src/app/services/masajista.service';
+import { Reservita } from 'src/app/models/reservita';
 
 @Component({
   selector: 'app-subproceso2de3',

@@ -40,6 +40,12 @@ import { Subproceso1de3Component } from './procesos/proceso3/subproceso1de3/subp
 import { Subproceso2de3Component } from './procesos/proceso3/subproceso2de3/subproceso2de3.component';
 import { Subproceso3de3Component } from './procesos/proceso3/subproceso3de3/subproceso3de3.component';
 import { Subproceso4de3Component } from './procesos/proceso3/subproceso4de3/subproceso4de3.component';
+import { ListTestimonioComponent } from './testimonio/list-testimonio/list-testimonio.component';
+import { CreateTestimonioComponent } from './testimonio/create-testimonio/create-testimonio.component';
+import { UpdateTestimonioComponent } from './testimonio/update-testimonio/update-testimonio.component';
+import { ListBlogscomentComponent } from './comentario/list-blogscoment/list-blogscoment.component';
+import { ListComentarioComponent } from './comentario/list-comentario/list-comentario.component';
+import { UpdateComentarioComponent } from './comentario/update-comentario/update-comentario.component';
 
 
 const routes: Routes = [
@@ -146,6 +152,40 @@ const routes: Routes = [
           {
             path: 'update/:id',
             component: UpdateHorarioComponent
+          },
+        ]
+      },
+      {
+        path: 'testimonio',
+        children: [
+          {
+            path: 'list',
+            component: ListTestimonioComponent
+          },
+          {
+            path: 'create',
+            component: CreateTestimonioComponent
+          },
+          {
+            path: 'update/:id',
+            component: UpdateTestimonioComponent
+          },
+        ]
+      },
+      {
+        path: 'comentarios',
+        children: [
+          {
+            path: 'listblog',
+            component: ListBlogscomentComponent
+          },
+          {
+            path: 'list',
+            component: ListComentarioComponent
+          },
+          {
+            path: 'update/:id',
+            component: UpdateComentarioComponent
           },
         ]
       },
